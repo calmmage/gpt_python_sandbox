@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "project-name"
+name = "gpt-python-sandbox"
 version = "0.0.1"
 # Template Version: 0.0.2 # update dockerfile and add basic contents
 # Add scheduled job example

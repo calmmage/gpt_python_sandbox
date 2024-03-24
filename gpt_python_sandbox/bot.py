@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
 from dotenv import load_dotenv
-from project_name.lib import MyPlugin, MyApp, MyHandler
+from gpt_python_sandbox.lib import GPTSandboxApp, MyHandler  #  MyPlugin,
 
 from bot_lib import (
     BotConfig,
@@ -9,8 +9,8 @@ from bot_lib import (
 from bot_lib.demo import create_bot, run_bot
 from bot_lib.plugins import GptPlugin
 
-plugins = [MyPlugin, GptPlugin]
-app = MyApp(plugins=plugins)
+plugins = [GptPlugin]
+app = GPTSandboxApp(plugins=plugins)
 bot_config = BotConfig(app=app)
 
 # set up dispatcher
